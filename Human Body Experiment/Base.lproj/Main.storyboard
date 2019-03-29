@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Heart View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HeartViewController" customModule="Human_Body_Experiment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="uLF-fL-j19">
+                                <rect key="frame" x="7.5" y="153.5" width="360" height="360"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BPM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oF3-OS-oKk">
+                                <rect key="frame" x="162" y="500" width="51.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55d-wv-8VP">
+                                <rect key="frame" x="177" y="538" width="21" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oav-ux-SN2">
+                                <rect key="frame" x="139.5" y="40" width="95" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="u0j-nM-FEe">
+                                <rect key="frame" x="18" y="608" width="339" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Increase heart speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mT-ag-I6R">
+                                <rect key="frame" x="106.5" y="579" width="161.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oav-ux-SN2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="1iA-fN-j7N"/>
+                            <constraint firstItem="55d-wv-8VP" firstAttribute="top" secondItem="oF3-OS-oKk" secondAttribute="bottom" constant="8" id="2Xa-OQ-9za"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u0j-nM-FEe" secondAttribute="trailing" constant="20" id="9FR-WY-jeH"/>
+                            <constraint firstItem="uLF-fL-j19" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DsM-Bx-QHM"/>
+                            <constraint firstItem="oF3-OS-oKk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ED4-1T-W23"/>
+                            <constraint firstItem="u0j-nM-FEe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="K0U-hf-BVK"/>
+                            <constraint firstItem="oF3-OS-oKk" firstAttribute="top" secondItem="uLF-fL-j19" secondAttribute="bottom" constant="-13.5" id="Zmf-Aw-QXi"/>
+                            <constraint firstItem="u0j-nM-FEe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eEt-RN-Has"/>
+                            <constraint firstItem="4mT-ag-I6R" firstAttribute="top" secondItem="55d-wv-8VP" secondAttribute="bottom" constant="20" id="jHP-pd-Sx3"/>
+                            <constraint firstItem="55d-wv-8VP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qou-lz-Q30"/>
+                            <constraint firstItem="4mT-ag-I6R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vFl-8z-iTU"/>
+                            <constraint firstItem="uLF-fL-j19" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wMi-9Y-BKz"/>
+                            <constraint firstItem="Oav-ux-SN2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="whM-O9-Z9w"/>
+                            <constraint firstItem="u0j-nM-FEe" firstAttribute="top" secondItem="4mT-ag-I6R" secondAttribute="bottom" constant="8" id="xtM-Jf-rqG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ivHeart" destination="uLF-fL-j19" id="xFb-K8-v8B"/>
+                        <outlet property="lbBPMCounter" destination="55d-wv-8VP" id="XjZ-vc-4gD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" width="360" height="360"/>
+    </resources>
+</document>
